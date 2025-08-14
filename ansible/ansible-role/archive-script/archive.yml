@@ -1,0 +1,8 @@
+---
+- name: Archive example
+  hosts: localhost
+  tasks:
+    - name: Compress dir /home/centos/Ansible into /home/centos/Ansible/module/home.tgz
+      archive:
+        path: /tmp
+        dest: ./home.tgz
